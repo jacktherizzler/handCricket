@@ -7,9 +7,8 @@ Recreating a game i used to play w my school friends.
 ## Running the Game
 1) First, train the model with hand sign images using the data collection and training scripts provided.
 2) Save the model as hand_sign_model.h5.
-3) Place the app.py and index.html files in the appropriate directories (app.py in the root, index.html in templates).
-4) Run the Flask application using python app.py.
-5) Navigate to http://127.0.0.1:5000/ in your web browser to play the game.
+3) Run the Flask application using python app.py.
+4) Navigate to http://127.0.0.1:5000/ in your web browser to play the game.
 
 
 

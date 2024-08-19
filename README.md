@@ -1,5 +1,5 @@
 # handCricket
-Recreating a game i used to play w my school friends.
+Recreated a game i used to play w my school friends.
 ## Logic
 - **Toss Logic**: The game starts with a toss, determining whether the user or the computer will bat first.
 - **Batting and Bowling**: During batting, the user (or computer) shows a hand sign, which is recognized by the CNN model. If the sign matches the bowler's choice, the batsman is out. Otherwise, the score is added.

@@ -6,9 +6,18 @@
     <title>Hand Cricket Game</title>
 </head>
 <body>
-    <h1>Hand Cricket Game using Hand Sign Recognition</h1>
+    <h1>Hand Cricket Game</h1>
+    <p>Toss: <span id="toss-result">Waiting for toss...</span></p>
+    <button onclick="doToss()">Toss</button>
     <div>
-        <img src="{{ url_for('video_feed') }}" alt="Video feed">
+        <img src="{{ url_for('video_feed') }}" width="640" height="480">
     </div>
+    <script>
+        async function doToss() {
+            const response = await fetch('/toss');
+            const data = await response.json();
+            document.getElementById('toss-result').textContent = data.toss_winner + " won the toss!";
+        }
+    </script>
 </body>
 </html>
